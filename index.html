@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>~
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="container">
+        <h2>🌦️ Previsão do Tempo</h2>
+        <input type="text" id="city" placeholder="Digite uma cidade">
+        <button onclick="getWeather()">Buscar</button>
+        
+        <div id="weather-info">
+            <div class="current-weather">
+                <h3 id="temperature">--°C</h3>
+                <p id="condition">Clima: --</p>
+            </div>
+            
+            <h3>Previsão por Hora</h3>
+            <div class="hourly-forecast" id="hourly-forecast">
+                <!-- Previsão por hora será carregada aqui -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
